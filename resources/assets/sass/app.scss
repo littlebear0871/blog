@@ -8,7 +8,22 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+// body {
+//   padding-top: 6px;
+// }
+.signin-form {
+  margin-top: 15%;
 }
+
+nav {
+  font-size: 18px;
+}
+
+// .card{
+//   height:800px;
+// }
+// div {
+//   border-style: solid;
+//   border-width: 1px;
+// }
