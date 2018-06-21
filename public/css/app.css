@@ -10411,7 +10411,8 @@ a.text-dark:focus {
   }
 }
 
-.signin-form {
+.signin-form,
+.login-form {
   margin-top: 15%;
 }
 
