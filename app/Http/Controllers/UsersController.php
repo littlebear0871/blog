@@ -25,4 +25,22 @@ class UsersController extends Controller
     {
         return view('users.show',compact('user'));
     }
+
+
+    public function store(Request $request)
+    {
+        $validatedData = $request->validate([
+        'email' => 'email|required|unique:users|max:255',
+        'password' => 'required',
+    ]);
+
+
+        $user=User::create([
+            'email'=>$request->email,
+            'password'=>bcrypt($request->password),
+            ]) ;
+
+        session()->flash('success', '欢迎，您将在这里开启一段新的旅程~');
+        return redirect()->route('users.show',[$user]);
+    }
 }

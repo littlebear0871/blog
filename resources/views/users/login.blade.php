@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container login-form col-2">
+@include('shared._errors')
     <form class="" action=" " method="post">
 
         <div class="form-group">
@@ -10,10 +11,10 @@
           <div class="input-group">
               <div class="input-group-prepend">
                   <div class="input-group-text">
-                      <span class="fa fa-user fa-fw"></span>
+                      <span class="fa fa-envelope-o fa-fw"></span>
                   </div>
               </div>
-              <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="">
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="">
 
           </div>
         </div>

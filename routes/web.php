@@ -22,7 +22,3 @@ Route::get('/signup','UsersController@create')->name('signup');
 Route::get('/login','UsersController@login')->name('login');
 
 Route::resource('users','UsersController');
-
-
-app\Models\User::create(['name'=> 'JICHN',
-'email'=>'jichn@foxmail.com','password'=>bcrypt('password')])
